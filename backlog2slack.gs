@@ -279,7 +279,7 @@ function postSlack(e,message,changes,description,comment){
 // シートを配列で取得
 function getSlackMemberArray() {
   var Sheet = SpreadsheetApp.openById(slackMemberSheetId);
-  var arr = Sheet.getSheetValues(1, 1, memoSheet.getLastRow(), memoSheet.getLastColumn());
+  var arr = Sheet.getSheetValues(1, 1, Sheet.getLastRow(), Sheet.getLastColumn());
   return arr;
 }
 
